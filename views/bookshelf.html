@@ -1,6 +1,6 @@
-<div class="bookshelf row" ng-repeat="book in myBooks">
+<div class="bookshelf row">
 
-  <div class="book col-md-3">
+  <div class="book col-md-3" ng-repeat="book in myBooks">
     <a href="#/books/{{$index}}">
       <img ng-src="{{book.cover}}">
       <h3 class="title"> {{book.title}} </h3>

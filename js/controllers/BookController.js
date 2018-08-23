@@ -1,4 +1,4 @@
-app.controller('BookController', ['$scope', '$routeParams', function($scope, $routeParams) {
+app.controller('BookController', ['$scope','books', '$routeParams', function($scope,books, $routeParams) {
   // Your code here
   books.success(function(data) {
     $scope.book = data[$routeParams.bookId]
